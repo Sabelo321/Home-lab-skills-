@@ -16,7 +16,7 @@ ipconfig /renew: To troubleshoot DHCP addressing issues.
   Networking troubleshooting/Screenshot (16).png
 
 3. Resolution: Simulated a network drop and used the renew command to successfully pull a new lease from the DHCP server.
-  Networking troubleshooting/Screenshot (17).png & 
+  Networking troubleshooting/Screenshot (17).png & Networking troubleshooting/Screenshot (18).png
 
 ### 4. Outcome
 Successfully identified a simulated connectivity failure and restored network access using standard CLI tools.
