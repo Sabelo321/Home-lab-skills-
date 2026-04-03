@@ -1,0 +1,13 @@
+Lab: Ticketing system Solved
+
+Scenario 
+A user reported they cannot access the finance department shared drive via a ticket
+
+Process:
+I created a user and set their ticket to high priority due to it being part of the finance department
+I then using the command prompt to troubleshoot the problem by first ping google.com it failed so i restarted the DHCP client service to now obtained a valid IP address
+Connection was restored thereafter
+
+Tools I used: spicework
+
+The screenshots show the process
