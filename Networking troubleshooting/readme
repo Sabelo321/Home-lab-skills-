@@ -1,4 +1,4 @@
- Network Diagnostics & Troubleshooting (Windows 11)
+ Network Diagnostics & Troubleshooting (Windows 11 pro)
 
 Objective
 To demonstrate proficiency in using the Windows Command Line to diagnose and resolve common connectivity issues.
@@ -8,7 +8,7 @@ ipconfig /all:To verify IP, Subnet Mask, and DNS settings.
 ping: To test ICMP connectivity and DNS resolution.
 ipconfig /renew: To troubleshoot DHCP addressing issues.
 
-### 3. Procedure
+        A. Procedure
 1. Verification: Confirmed the local IP address and gateway configuration.
    Networking troubleshooting/Screenshot (14).png
    
@@ -18,5 +18,6 @@ ipconfig /renew: To troubleshoot DHCP addressing issues.
 3. Resolution: Simulated a network drop and used the renew command to successfully pull a new lease from the DHCP server.
   Networking troubleshooting/Screenshot (17).png & Networking troubleshooting/Screenshot (18).png
 
-### 4. Outcome
+        B. Outcome
 Successfully identified a simulated connectivity failure and restored network access using standard CLI tools.
+Networking troubleshooting/Screenshot (19).png
