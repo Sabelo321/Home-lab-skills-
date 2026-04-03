@@ -13,7 +13,7 @@ ipconfig /renew: To troubleshoot DHCP addressing issues.
    Networking troubleshooting/Screenshot (14).png
    
 2. Connectivity Test: Successfully pinged external DNS (8.8.8.8) to verify internet access.
-  
+  Networking troubleshooting/Screenshot (16).png
 
 3. **Resolution:** Simulated a network drop and used the renew command to successfully pull a new lease from the DHCP server.
   
