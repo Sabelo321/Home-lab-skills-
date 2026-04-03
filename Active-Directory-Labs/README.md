@@ -9,7 +9,7 @@ Created a new local user account.
 Added the user to the Administrators group.
 
 Verified the account could perform elevated tasks.
-
-
+Active-Directory-Labs/New user now has more access.png
 
 Skills Shown: User Account Control (UAC), Group Management, Windows 11 Administration.
+ 
