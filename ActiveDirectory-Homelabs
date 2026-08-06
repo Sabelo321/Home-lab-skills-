@@ -1,0 +1,354 @@
+# Active Directory Home Lab
+
+## Overview
+
+This repository documents the design, deployment, administration, and troubleshooting of a Microsoft Active Directory environment built in Oracle VirtualBox.
+
+The project simulates a small business network from the ground up, beginning with the deployment of a Windows Server Domain Controller and expanding into a complete enterprise-style environment.
+
+Throughout this project, I will configure core Windows Server services including Active Directory Domain Services (AD DS), DNS, DHCP, Group Policy, file sharing, user and group management, and Windows client administration.
+
+The objective is to strengthen my practical Windows Server administration skills while building a professional portfolio that demonstrates hands-on experience in enterprise IT environments.
+
+---
+
+# Project Objectives
+
+- Deploy Windows Server as a Domain Controller
+- Configure Active Directory Domain Services
+- Configure DNS
+- Configure DHCP
+- Create Organizational Units
+- Create and manage users
+- Create and manage security groups
+- Join Windows clients to the domain
+- Configure Group Policy Objects (GPOs)
+- Configure shared folders and NTFS permissions
+- Implement mapped network drives
+- Perform Active Directory administration
+- Troubleshoot common Helpdesk scenarios
+- Document all work using industry-standard documentation
+
+---
+
+# Lab Environment
+
+| Component | Technology |
+|-----------|------------|
+| Hypervisor | Oracle VirtualBox |
+| Server Operating System | Windows Server 2022 |
+| Client Operating System | Windows 10 Pro |
+| Domain | homelab.local |
+| Domain Controller | DC01 |
+
+---
+
+# Network Topology
+
+Internet
+│
+│
+NAT Adapter
+│
+DC01 (Windows Server)
+10.0.2.x
+│
+│
+Host-Only Network
+192.168.56.0/24
+│
+├──────────────┐
+│              │
+CLIENT01    Future Clients
+
+---
+
+# Skills Demonstrated
+
+## Windows Server Administration
+
+- Windows Server Installation
+- Server Configuration
+- Role Installation
+- Server Manager
+- Windows Administrative Tools
+
+## Active Directory
+
+- Domain Controller Deployment
+- Organizational Units
+- User Management
+- Group Management
+- Password Policies
+- Account Lockout
+- Security Groups
+
+## Networking
+
+- Static IP Configuration
+- DNS
+- DHCP
+- TCP/IP
+- Virtual Networking
+- VirtualBox Networking
+
+## Windows Client Administration
+
+- Domain Join
+- Local vs Domain Accounts
+- Remote Administration
+- User Profile Management
+
+## Group Policy
+
+- Password Policies
+- Desktop Restrictions
+- Drive Mapping
+- Folder Redirection
+- Security Policies
+
+## File Services
+
+- Shared Folders
+- NTFS Permissions
+- Access Control
+- Network Shares
+
+## Troubleshooting
+
+- Active Directory Issues
+- DNS Resolution
+- Authentication Problems
+- User Logon Problems
+- Network Connectivity
+- Helpdesk Scenarios
+
+---
+
+# Labs
+
+## Lab 01 - Build a Domain Controller
+
+Status: ✅ Completed
+
+Topics
+
+- Install Windows Server
+- Configure Networking
+- Configure Static IP
+- Install AD DS
+- Promote Domain Controller
+- Configure DNS
+
+---
+
+## Lab 02 - Organizational Units
+
+Status: ⏳ Planned
+
+Topics
+
+- Create OUs
+- Department Structure
+- Administrative Organization
+
+---
+
+## Lab 03 - Users and Groups
+
+Status: ⏳ Planned
+
+Topics
+
+- Create Users
+- Create Security Groups
+- Group Membership
+- User Management
+
+---
+
+## Lab 04 - Windows Client Domain Join
+
+Status: ⏳ Planned
+
+Topics
+
+- Install Windows 10
+- Join Domain
+- Verify Authentication
+
+---
+
+## Lab 05 - Group Policy
+
+Status: ⏳ Planned
+
+Topics
+
+- Password Policy
+- Desktop Restrictions
+- Security Policies
+
+---
+
+## Lab 06 - File Server
+
+Status: ⏳ Planned
+
+Topics
+
+- Shared Folders
+- NTFS Permissions
+- Access Control
+
+---
+
+## Lab 07 - DNS Administration
+
+Status: ⏳ Planned
+
+Topics
+
+- DNS Records
+- Forward Lookup Zones
+- Reverse Lookup Zones
+- Name Resolution
+
+---
+
+## Lab 08 - DHCP
+
+Status: ⏳ Planned
+
+Topics
+
+- DHCP Scope
+- Reservations
+- Address Leasing
+
+---
+
+## Lab 09 - Password Management
+
+Status: ⏳ Planned
+
+Topics
+
+- Reset Passwords
+- Unlock Accounts
+- Disable Users
+- Force Password Change
+
+---
+
+## Lab 10 - Group Policy Drive Mapping
+
+Status: ⏳ Planned
+
+Topics
+
+- Network Drives
+- Group Policy Preferences
+
+---
+
+## Lab 11 - Helpdesk Scenarios
+
+Status: ⏳ Planned
+
+Topics
+
+- Login Issues
+- Password Resets
+- Network Troubleshooting
+- DNS Problems
+- Locked Accounts
+- Printer Issues
+
+---
+
+## Lab 12 - PowerShell Administration
+
+Status: ⏳ Planned
+
+Topics
+
+- User Creation
+- Bulk Administration
+- AD PowerShell
+- Automation
+
+---
+
+# Repository Structure
+
+```
+
+ActiveDirectory-HomeLab
+│
+├── README.md
+│
+├── Lab01-Build-Domain-Controller
+│
+├── Lab02-Organizational-Units
+│
+├── Lab03-Users-and-Groups
+│
+├── Lab04-Domain-Join
+│
+├── Lab05-Group-Policy
+│
+├── Lab06-File-Server
+│
+├── Lab07-DNS
+│
+├── Lab08-DHCP
+│
+├── Lab09-Password-Management
+│
+├── Lab10-Drive-Mapping
+│
+├── Lab11-Helpdesk-Scenarios
+│
+└── Lab12-PowerShell
+
+```
+
+---
+
+# What I Learned
+
+This project provides hands-on experience with Microsoft enterprise infrastructure and demonstrates practical knowledge of Windows Server administration.
+
+Key learning outcomes include:
+
+- Deploying and configuring Active Directory
+- Managing enterprise users and computers
+- Implementing Group Policy
+- Managing DNS and DHCP
+- Troubleshooting Windows domain environments
+- Building enterprise-style network infrastructure
+- Documenting technical implementations using GitHub
+
+---
+
+# Future Improvements
+
+Planned enhancements include:
+
+- Additional Windows 10 client machines
+- Windows Server Backup
+- WSUS
+- Remote Desktop Services
+- Certificate Services (AD CS)
+- Azure AD Connect
+- Microsoft Entra ID integration
+- PowerShell automation scripts
+
+---
+
+# Author
+
+**Sabelo Mkhwanazi**
+
+This repository is part of my hands-on learning journey in Windows Server Administration, Active Directory, and IT Support.
