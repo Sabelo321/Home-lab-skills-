@@ -1,0 +1,126 @@
+# Active Directory Home Lab - Lab 01: Building a Domain Controller
+
+## Overview
+
+This lab demonstrates the deployment of a Windows Server Domain Controller in a VirtualBox environment. The goal was to build the foundation of an Active Directory infrastructure that will be expanded in future labs.
+
+The server was promoted to a Domain Controller, DNS was configured, and the Active Directory Domain Services (AD DS) role was successfully installed.
+
+---
+
+## Objectives
+
+- Install Windows Server
+- Configure VirtualBox networking
+- Configure a static IP address
+- Install Active Directory Domain Services (AD DS)
+- Promote the server to a Domain Controller
+- Install and configure DNS
+- Verify Active Directory installation
+
+---
+
+## Lab Environment
+
+| Component | Details |
+|----------|---------|
+| Hypervisor | Oracle VirtualBox |
+| Operating System | Windows Server 2022 |
+| Domain Name | homelab.local |
+| Server Name | DC01 |
+
+---
+
+## Network Configuration
+
+### Adapter 1 (NAT)
+
+Purpose:
+- Internet connectivity
+
+### Adapter 2 (Host-Only)
+
+Purpose:
+- Internal Active Directory network
+
+| Setting | Value |
+|---------|-------|
+| IP Address | 192.168.56.10 |
+| Subnet Mask | 255.255.255.0 |
+| Preferred DNS | 192.168.56.10 |
+
+---
+
+## Implementation Steps
+
+1. Installed Windows Server.
+2. Configured networking in VirtualBox.
+3. Added a Host-Only Adapter.
+4. Assigned a static IP address.
+5. Installed Active Directory Domain Services.
+6. Promoted the server to a Domain Controller.
+7. Created the `homelab.local` forest.
+8. Installed and configured DNS.
+9. Verified Active Directory installation using Active Directory Users and Computers.
+
+---
+
+## Verification
+
+The following management console confirmed a successful deployment:
+
+- Active Directory Users and Computers
+- Domain: `homelab.local`
+- Default containers successfully created:
+  - Builtin
+  - Computers
+  - Domain Controllers
+  - Users
+  - Managed Service Accounts
+
+---
+
+## Skills Demonstrated
+
+- Windows Server Administration
+- Active Directory Domain Services
+- DNS Configuration
+- Domain Controller Deployment
+- VirtualBox Networking
+- Static IP Configuration
+- Server Role Installation
+- Microsoft Management Console (MMC)
+
+---
+
+## Screenshots
+
+| Screenshot | Description |
+|------------|-------------|
+| Lab01-01-Deployment-Configuration.png | Created a new Active Directory forest |
+| Lab01-02-Domain-Controller-Options.png | Configured Domain Controller options |
+| Lab01-03-DNS-Options.png | Configured DNS during AD DS deployment |
+| Lab01-04-Additional-Options.png | Verified NetBIOS domain name |
+| Lab01-05-Paths.png | Verified AD DS database paths |
+| Lab01-06-Review-Options.png | Reviewed deployment configuration |
+| Lab01-07-Prerequisites-Check.png | Validated installation prerequisites |
+| Lab01-08-Installation.png | Installed Active Directory Domain Services |
+| Lab01-09-Domain-Controller-Login.png | Logged into the new Domain Controller |
+| Lab01-10-Active-Directory-Users-and-Computers.png | Verified successful Active Directory deployment |
+
+---
+
+## Challenges Encountered
+
+During deployment, several configuration issues were resolved:
+
+- Configured a static IP address for the Domain Controller.
+- Added a Host-Only Adapter in VirtualBox to create an isolated Active Directory network.
+- Resolved networking configuration between the NAT and Host-Only adapters.
+- Successfully completed Domain Controller promotion after correcting the network configuration.
+
+---
+
+## Outcome
+
+A fully functional Active Directory Domain Controller was successfully deployed and verified. This environment will serve as the foundation for future labs involving Organizational Units, users, groups, Group Policy, DNS, DHCP, and Windows client domain joining.
